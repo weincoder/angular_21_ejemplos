@@ -61,22 +61,3 @@ mat-error {
     margin-top: -0.5rem;
 }
 
-button[mat-raised-button] {
-    background: #7c3aed;
-    color: #fff;
-    font-weight: 700;
-    border-radius: 8px;
-    font-size: 1.3rem;
-    box-shadow: 0 2px 8px #7c3aed22;
-    transition: background 0.2s;
-    padding: 1rem 0;
-    margin-top: 2rem;
-}
-button[mat-raised-button]:hover {
-    background: #a78bfa;
-}
-button[mat-raised-button]:disabled {
-    background: #bdbdbd;
-    color: #eee;
-    cursor: not-allowed;
-}
