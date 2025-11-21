@@ -1,0 +1,37 @@
+
+
+<mat-card class="example-card" style="margin-bottom: 2rem;">
+
+    <mat-card-content>
+        <p>
+            Este formulario utiliza <b>Signal Forms</b> de Angular 21 para mostrar cómo validar campos de manera reactiva y moderna. Los campos y errores se actualizan automáticamente usando signals y validadores.
+        </p>
+    </mat-card-content>
+</mat-card>
+<form class="form-container" (submit)="submit($event)" novalidate>
+    <mat-form-field appearance="outline" color="primary" class="full-width">
+        <mat-label>Nombre</mat-label>
+        <input matInput id="name" type="text" [field]="form.name" [class.invalid]="(submitted() || form.name().touched()) && form.name().invalid()" />
+        <mat-hint>Introduce tu nombre completo</mat-hint>
+        <mat-error *ngIf="(submitted() || form.name().touched()) && form.name().errors().length">
+            <ul style="margin:0; padding-left: 1em;">
+                @for (error of form.name().errors(); track error) {
+                    <li>{{ error.message }}</li>
+                }
+            </ul>
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline" color="primary" class="full-width">
+        <mat-label>Email</mat-label>
+        <input matInput id="email" type="email" [field]="form.email" [class.invalid]="(submitted() || form.email().touched()) && form.email().invalid()" />
+        <mat-hint>ejemplo@correo.com</mat-hint>
+        <mat-error *ngIf="(submitted() || form.email().touched()) && form.email().errors().length">
+            <ul style="margin:0; padding-left: 1em;">
+                @for (error of form.email().errors(); track error) {
+                    <li>{{ error.message }}</li>
+                }
+            </ul>
+        </mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit" [disabled]="!form().valid()" class="btn-morado">Enviar</button>
+</form>

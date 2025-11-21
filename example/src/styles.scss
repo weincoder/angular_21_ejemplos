@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+	font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.btn-morado {
+	background: #7c3aed !important;
+	color: #fff !important;
+	font-weight: 600;
+	width: 100%;
+	margin-top: 1.5rem;
+	border-radius: 6px;
+	box-shadow: 0 2px 8px rgba(124,58,237,0.08);
+	transition: background 0.2s;
+}
+.btn-morado:hover:not(:disabled) {
+	background: #a78bfa !important;
+}

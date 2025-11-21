@@ -1,0 +1,17 @@
+<mat-card>
+    <h2>Ejemplo de linkedSignal</h2>
+    <form>
+        <mat-form-field appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input matInput [value]="nombre()" (input)="nombre.set($event.target.value)" name="nombre" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Apellido</mat-label>
+            <input matInput [value]="apellido()" (input)="apellido.set($event.target.value)" name="apellido" />
+        </mat-form-field>
+        <div style="margin-top: 1rem;">
+            <strong>Nombre completo:</strong>
+            <span>{{ nombreCompleto() }}</span>
+        </div>
+    </form>
+</mat-card>

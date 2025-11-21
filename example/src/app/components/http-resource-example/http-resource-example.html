@@ -1,0 +1,23 @@
+<mat-card>
+    <p>Este ejemplo implementa la gestión de recursos HTTP, mostrando cómo manejar múltiples peticiones GET en Angular 21 con signals.</p>
+
+    <h3 style="color:#7c3aed; margin-top:2rem;">Usuarios (GET)</h3>
+    @if (usersResource.isLoading()) {
+        <mat-progress-spinner mode="indeterminate" color="primary"></mat-progress-spinner>
+        <p>Cargando usuarios...</p>
+    } @else if (usersResource.error()) {
+        <mat-icon color="warn">error</mat-icon>
+        <span>Error: {{ usersResource.error() }}</span>
+    } @else {
+        <button mat-raised-button color="primary" (click)="reloadUsers()" class="btn-morado">Recargar usuarios</button>
+        <p>Total de usuarios: {{ totalUsers() }}</p>
+        <mat-list>
+            @for (user of usersResource.value()?.slice(0, 10); track user.id) {
+                <mat-list-item>
+                    <h3 matLine>{{ user.name }}</h3>
+                    <p matLine>{{ user.email }} ({{ user.username }})</p>
+                </mat-list-item>
+            }
+        </mat-list>
+    }
+</mat-card>

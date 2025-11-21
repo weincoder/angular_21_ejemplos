@@ -1,0 +1,21 @@
+mat-card {
+    margin: 24px 0;
+    padding: 16px;
+    background: #f8f6ff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(124, 58, 237, 0.08);
+}
+
+mat-form-field {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+h2 {
+    color: #7c3aed;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+}
+* input{
+    padding: 2px 4px 8px 8px;
+}

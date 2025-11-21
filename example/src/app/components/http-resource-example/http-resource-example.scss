@@ -1,0 +1,43 @@
+mat-card {
+    margin: 24px 0;
+    padding: 16px;
+    background: #f8f6ff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(124, 58, 237, 0.08);
+}
+
+mat-progress-spinner {
+    display: block;
+    margin: 16px auto;
+}
+
+* mat-list-item {
+    margin-bottom: 16px;
+    display: block;
+    white-space: normal;
+    word-break: break-word;
+    height: 80px;
+}
+
+h3[matLine] {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 4px;
+    white-space: normal;
+    word-break: break-word;
+}
+
+p[matLine] {
+    font-size: 1rem;
+    color: #444;
+    margin: 0;
+    white-space: normal;
+    word-break: break-word;
+}
+
+h2 {
+    color: #7c3aed;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+}
