@@ -1,7 +1,7 @@
 # 🅰️ Angular 21: Ejemplos Prácticos & Novedades
 
 [![Angular](https://img.shields.io/badge/Angular-21.0.0-dd0031?style=for-the-badge&logo=angular)](https://angular.io/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE.md)
 [![YouTube](https://img.shields.io/badge/Ver_en_YouTube-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/live/N156wU9YlE0)
 
 > **¿Te sirvió este código?** > Si aprendiste algo nuevo o te ahorré tiempo de investigación, considera darle una **estrella ⭐** al repositorio arriba a la derecha. ¡Me ayuda mucho a seguir creando contenido!
