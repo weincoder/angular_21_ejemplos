@@ -41,7 +41,7 @@ Configuración para que herramientas de IA (como Cursor o Antigravity) entiendan
 
 Hemos preparado una guía detallada para poner en marcha el proyecto.
 
-👉 **[Ir a la Guía de Inicio (GETTING STARTED)](GETTING_STARTED.md)**
+👉 **[Ir a la Guía de Inicio (GETTING STARTED)](GETTINGSTARTED.md)**
 
 ---
 
